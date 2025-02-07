@@ -13,7 +13,7 @@ Amplify.configure(outputs);
 const client = generateClient<Schema>();
 
 export default function App() {
-  console.log(process.env);
+  console.log(process.env.NEXT_PUBLIC_SANAY);
   const [todos, setTodos] = useState<Array<Schema["Todo"]["type"]>>([]);
 
   function listTodos() {
